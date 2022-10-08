@@ -1,7 +1,7 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Main {
+public class Bfs {
   public static <T> void breadthFirst(Node<T> root) {
     if (root == null) {
       return;
