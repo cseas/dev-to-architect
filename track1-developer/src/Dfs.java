@@ -9,6 +9,26 @@ public class Dfs {
     inOrder(root.getRightChild());
   }
 
+  public static <T> void preOrder(Node<T> root) {
+    if (root == null) {
+      return;
+    }
+
+    System.out.print(root.getData() + " -> ");
+    preOrder(root.getLeftChild());
+    preOrder(root.getRightChild());
+  }
+
+  public static <T> void postOrder(Node<T> root) {
+    if (root == null) {
+      return;
+    }
+
+    postOrder(root.getLeftChild());
+    postOrder(root.getRightChild());
+    System.out.print(root.getData() + " -> ");
+  }
+
   public static void main(String[] args) {
     Node<Character> a = new Node<>('A');
     Node<Character> b = new Node<>('B');
@@ -32,6 +52,15 @@ public class Dfs {
     d.setLeftChild(h);
     d.setRightChild(i);
 
+    System.out.println("In order:");
     inOrder(a);
+    System.out.println("\n");
+
+    System.out.println("Pre order:");
+    preOrder(a);
+    System.out.println("\n");
+
+    System.out.println("Post order:");
+    postOrder(a);
   }
 }
