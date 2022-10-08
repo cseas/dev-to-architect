@@ -7,6 +7,28 @@ public class Bfs {
       return;
     }
 
+    Queue<Node<T>> queue = new LinkedList<>();
+    queue.add(root);
+
+    while (!queue.isEmpty()) {
+      Node<T> node = queue.remove();
+      System.out.print(node + " -> ");
+
+      if (node.getLeftChild() != null) {
+        queue.add(node.getLeftChild());
+      }
+
+      if (node.getRightChild() != null) {
+        queue.add(node.getRightChild());
+      }
+    }
+  }
+
+  public static <T> void breadthFirstWithLevel(Node<T> root) {
+    if (root == null) {
+      return;
+    }
+
     Queue<Pair<Node<T>, Integer>> queue = new LinkedList<>(); // Pair(data of node, level of node)
 
     int level = 0;
@@ -51,6 +73,8 @@ public class Bfs {
 
     e.setRightChild(g);
 
-    breadthFirst(a); // A -> B -> C -> D -> E -> F -> H -> G
+    breadthFirst(a);
+    System.out.println("\n");
+    breadthFirstWithLevel(a); // A -> B -> C -> D -> E -> F -> H -> G
   }
 }
