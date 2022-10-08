@@ -1,3 +1,5 @@
+package basics;
+
 public class Dfs {
   public static <T> void inOrder(Node<T> root) {
     if (root == null) {

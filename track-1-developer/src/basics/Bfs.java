@@ -1,3 +1,5 @@
+package basics;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -29,7 +31,8 @@ public class Bfs {
       return;
     }
 
-    Queue<Pair<Node<T>, Integer>> queue = new LinkedList<>(); // Pair(data of node, level of node)
+    Queue<Pair<Node<T>, Integer>> queue = new LinkedList<>(); // basics.Pair(data of node, level
+    // of node)
 
     int level = 0;
     queue.add(new Pair<>(root, level));

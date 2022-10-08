@@ -6,8 +6,8 @@ Code from Percipio Aspire Journey: Developer to Software Architect
 
 - Track 1: Developer
   - Advanced Data Structures & Algorithms in Java
-    - [ ] Working with Binary Trees
-    - [ ] Solving Binary Tree Problems
+    - [x] [Working with Binary Trees][1]
+    - [ ] [Solving Binary Tree Problems][2]
     - [ ] Working with Binary Search Trees
     - [ ] Sorting & Searching Algorithms
     - [ ] Working with the Binary Heap
@@ -23,3 +23,6 @@ Code from Percipio Aspire Journey: Developer to Software Architect
 - Track 2: Database Developer
 - Track 3: Full Stack Developer
 - Track 4: Software Architect
+
+[1]: ./track-1-developer/src/basics/
+[2]: ./track-1-developer/src/problems/
