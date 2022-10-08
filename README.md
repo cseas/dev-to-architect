@@ -13,7 +13,7 @@ Code from Percipio Aspire Journey: Developer to Software Architect
     - [ ] Working with the Binary Heap
     - [ ] Getting started with Graphs
     - [ ] Working with Graph Algorithms
-  - Multi-threading and Concurrency in Java
+  - [ ] Multi-threading and Concurrency in Java
     - [ ] Introduction to Concurrent Programming
     - [ ] Spawning & Launching Threads
     - [ ] Thread Synchronization & Locks
