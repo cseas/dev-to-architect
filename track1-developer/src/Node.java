@@ -1,37 +1,35 @@
 public class Node<T> {
-    private T data;
+  private T data;
 
-    private Node<T> leftChild;
-    private Node<T> rightChild;
+  private Node<T> leftChild;
+  private Node<T> rightChild;
 
-    public Node(T data) {
-        this.data = data;
-    }
+  public Node(T data) {
+    this.data = data;
+  }
 
-    public T getData() {
-        return data;
-    }
+  public T getData() {
+    return data;
+  }
 
-    public Node<T> getLeftChild() {
-        return leftChild;
-    }
+  public Node<T> getLeftChild() {
+    return leftChild;
+  }
 
-    public void setLeftChild(Node<T> leftChild) {
-        this.leftChild = leftChild;
-    }
+  public void setLeftChild(Node<T> leftChild) {
+    this.leftChild = leftChild;
+  }
 
-    public Node<T> getRightChild() {
-        return rightChild;
-    }
+  public Node<T> getRightChild() {
+    return rightChild;
+  }
 
-    public void setRightChild(Node<T> rightChild) {
-        this.rightChild = rightChild;
-    }
+  public void setRightChild(Node<T> rightChild) {
+    this.rightChild = rightChild;
+  }
 
-    @Override // helpful for debugging
-    public String toString() {
-        return "\nData: " + data.toString() + " Left Child: " + ((leftChild == null) ? "" :
-                leftChild.getData()) + " " + "Right child: " + ((rightChild == null) ? "" :
-                rightChild.getData());
-    }
+  @Override // helpful for debugging
+  public String toString() {
+    return data.toString();
+  }
 }
